@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Customer Resource Management </title>
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<form id="form1" runat="server">
+<!-- start header -->
+<div id="header">
+<div id="logo">
+<h1><a href="#">Customer <span> Resource</span> Management
+</a></h1>
+</div>
+</div>
+<div id="menu">
+<ul id="main">
+<asp:HyperLink ID="HyperLink1" runat="server"
+NavigateUrl="~/frmlogin.aspx">Home</asp:HyperLink>
+<asp:HyperLink ID="HyperLink2" runat="server">About
+Us</asp:HyperLink>
+</ul>
+</div>
+<!-- end header -->
+<div id="wrapper">
+<!-- start page -->
+<div id="page">
+<div id="sidebar1" class="sidebar">
+<ul>
+<li>
+<h2>
+<asp:Label ID="Label3" runat="server"
+Text=""></asp:Label></h2>
+</li>
+<li>
+<ul>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder2"
+runat="server">
+</asp:ContentPlaceHolder>
+</ul>
+</li>
+<li>
+<h2>SITE VISITED</h2>
+</li>
+<li>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder3"
+runat="server">
+<table border="1" style="width: 236px">
+<tr>
+<td>
+<asp:Label ID="Label1" runat="server"
+style="font-size: x-large" Text="Label"
+ForeColor="#EC7600"></asp:Label>
+</td>
+</tr>
+</table>
+</asp:ContentPlaceHolder>
+</li>
+</ul>
+</div>
+<!-- start content -->
+<div id="content">
+<div class="post">
+<h1 class="title"><a href="#">Welcome to Complaint
+Board</a></h1>
+<div class="entry">
+<asp:ContentPlaceHolder
+ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+</div>
+</div><!-- end content -->
+<!-- start sidebars -->
+<div id="sidebar2" class="sidebar">
+<ul>
+<li>
+<h2>Categories</h2>
+</li>
+<li>
+<ul>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder4"
+runat="server">
+</asp:ContentPlaceHolder>
+</ul>
+</li>
+<li>
+<h2>Current Users</h2>
+</li>
+<li>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder5"
+runat="server">
+<table border="1" style="width: 236px">
+<tr>
+<td>
+<asp:Label ID="Label2" runat="server"
+style="font-size: x-large" Text="Label"
+ForeColor="#EC7600"></asp:Label>
+</td>
+</tr>
+</table>
+</asp:ContentPlaceHolder>
+</li>
+</ul>
+</div>
+<!-- end sidebars -->
+<!-- end sidebars -->
+<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+&nbsp;</div>
+<div id="footer">
+<p class="copyright">&copy;&nbsp;&nbsp;2009 All Rights Reserved
+&nbsp;&bull;&nbsp; Design by Vikrant Sood.</p>
+</div>
+</form>
+</body>
+</html>
